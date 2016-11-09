@@ -10,9 +10,8 @@ from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
-#dbx = dropbox.Dropbox("oFqZN8vwQaAAAAAAAAAADM46ud5QfR2dxjYBbaW31rU4uYFFPoCLkTV9omj7YnHh")
-dbx = dropbox.Dropbox("BTJ8jont9rAAAAAAAAAACUQN0vOOs9wbYX8ptkHTL_kxW34xGgN3aSwxws0cuiqB")
-QRsavedir = 'C:/Users/ayumi.ando/Desktop/test'
+dbx = dropbox.Dropbox("アクセストークン")
+QRsavedir = 'QRコードを保存したいフォルダのパス'
 
 def getext(filename):
     return os.path.splitext(filename)[-1].lower()
